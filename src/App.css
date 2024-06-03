@@ -1,0 +1,10 @@
+body {
+  background: white;
+  color: black;
+}
+.container {
+  padding: 8px 33.333%;
+}
+.loginPage{
+  background:linear-gradient(to right, #e2e612d0,#1f108f);
+}
