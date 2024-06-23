@@ -8,3 +8,6 @@ body {
 .loginPage{
   background:linear-gradient(to right, #e2e612d0,#1f108f);
 }
+ion-icon {
+  color: black;
+}

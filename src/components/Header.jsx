@@ -6,21 +6,18 @@ function Header() {
   let { link } = useParams();
   return (
     <>
-      <div className=" bg-gray-200 text-black uppercase flex gap-12 justify-end  p-2 text-lg">
-        <Link
-          className=" px-4 py-1 hover:bg-black hover:rounded-3xl hover:text-white"
-          to="/"
-        >
+      <div className="bg-gray-200 text-black uppercase flex gap-12 justify-end  p-2 text-lg">
+        <Link className=" px-4 py-1 hover:bg-gray-800 hover:text-white" to="/">
           Home
         </Link>
         <Link
-          className=" px-4 py-1 hover:bg-black hover:rounded-3xl hover:text-white"
+          className=" px-4 py-1 hover:bg-gray-800  hover:text-white"
           to="/cart"
         >
           Cart
         </Link>
         <Link
-          className="px-4 py-1 hover:bg-black hover:rounded-3xl hover:text-white"
+          className="px-4 py-1 hover:bg-gray-800  hover:text-white"
           to="/login"
         >
           Login

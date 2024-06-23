@@ -93,22 +93,25 @@ function Product() {
         <Carousel />
       </div>
 
-      <h1 className=" text-center text-6xl font-bold mt-32 tracking-wider">
+      <h1 className=" text-center text-3xl font-bold mt-10 md:text-6xl tracking-wider">
         Products
       </h1>
-      <div className="flex gap-12">
-        <div>
+      <div className="flex gap-0 md:gap-4">
+        <div className=" mr-1">
           <Filter />
         </div>
         <div>
           <input
             type="text"
-            placeholder="Search products"
-            className="rounded-xl mx-48 mt-4 py-1 px-3 w-96 border"
+            placeholder="Search products "
+            className="rounded-xl outline-none pl-2 lg:pr-40 pr-1 py-2 mt-4 border-t-2 border-l-2 border-b-2 border-r-0 "
             onChange={handleChange}
           />
+          <div className="inline p-2 bg-gray-200 rounded-xl border-r-2 border-b-2 border-t-2">
+            <ion-icon name="search"></ion-icon>
+          </div>
           <div
-            className=" mt-18 grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-2 place-items-center"
+            className=" mt-18 grid grid-cols-1 sm:grid-cols-2 sm:gap-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  2xl:grid-cols-8"
             id="product-div"
           >
             {handleFilter()}
