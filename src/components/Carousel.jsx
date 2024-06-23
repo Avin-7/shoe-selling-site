@@ -1,36 +1,29 @@
-import Carousel from "react-bootstrap/Carousel";
-import ExampleCarouselImage from "./ExampleCarouselImage";
-import CarouselImage2 from "./CarouselImage2";
-import CarouselImage3 from "./CarouselImage3";
+import React from "react";
+import { Carousel } from "antd";
 
-function IndividualIntervalsExample() {
-  return (
-    <Carousel>
-      <Carousel.Item interval={1000}>
-        <ExampleCarouselImage />
-        <Carousel.Caption className="text-black font-semibold text-lg">
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={500}>
-        <CarouselImage2 text="Second slide" />
-        <Carousel.Caption className="text-lg font-semibold">
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <CarouselImage3 text="Third slide" />
-        <Carousel.Caption className="text-black text-lg font-semibold">
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-  );
-}
-
-export default IndividualIntervalsExample;
+const carouselComponent = () => (
+  <Carousel className=" h-60  md:h-96 " autoplay autoplaySpeed={3000}>
+    <div className="">
+      <img
+        src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-12052024-MainBannerDailyChanging-Z1-P4-Puma-Reebok-min50-extra750.jpg"
+        alt="image"
+        className="h-60 w-full object-cover md:h-96  "
+      />
+    </div>
+    <div>
+      <img
+        src="https://prod-img.thesouledstore.com/public/theSoul/uploads/themes/7641320240504121234.jpg?format=webp&w=1366&dpr=1.0"
+        alt="image"
+        className="h-60 w-full object-cover md:h-96  "
+      />
+    </div>
+    <div>
+      <img
+        src="https://images.bewakoof.com/uploads/category/desktop/Soulful-Casual-shoes_Desktop-Inside-banner-1712037249.jpg"
+        alt="image"
+        className="h-60 w-full object-cover md:h-96  "
+      />
+    </div>
+  </Carousel>
+);
+export default carouselComponent;
